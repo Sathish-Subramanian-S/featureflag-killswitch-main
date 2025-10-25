@@ -1,0 +1,59 @@
+{
+  "groups": [
+    {
+      "name": "launchdarkly",
+      "type": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "ldkillswitch.cache",
+      "type": "com.macys.stores.factory.ldkillswitch.caching.FeatureFlagCacheProperties",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.caching.FeatureFlagCacheProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "launchdarkly.offline-mode",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "launchdarkly.sdk-key",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "launchdarkly.supported-channels",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "launchdarkly.supported-source-systems",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "launchdarkly.supported-stores",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "launchdarkly.validation-flag-key",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.config.LaunchDarklyProperties"
+    },
+    {
+      "name": "ldkillswitch.cache.expire-after-write-minutes",
+      "type": "java.lang.Long",
+      "description": "The duration in minutes after which a cache entry should be automatically removed after being created or replaced.",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.caching.FeatureFlagCacheProperties"
+    },
+    {
+      "name": "ldkillswitch.cache.maximum-size",
+      "type": "java.lang.Long",
+      "description": "The maximum number of entries the cache may contain.",
+      "sourceType": "com.macys.stores.factory.ldkillswitch.caching.FeatureFlagCacheProperties"
+    }
+  ],
+  "hints": []
+}

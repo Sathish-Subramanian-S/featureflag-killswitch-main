@@ -1,0 +1,194 @@
+{
+  "groups": [
+    {
+      "name": "webclient",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.circuit-breaker",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getCircuitBreaker()"
+    },
+    {
+      "name": "webclient.fallback",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$FallbackConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getFallback()"
+    },
+    {
+      "name": "webclient.logging",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$LoggingConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getLogging()"
+    },
+    {
+      "name": "webclient.proxy",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$ProxyConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getProxy()"
+    },
+    {
+      "name": "webclient.retry",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getRetry()"
+    },
+    {
+      "name": "webclient.retry.backoff",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig$BackoffConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig",
+      "sourceMethod": "getBackoff()"
+    },
+    {
+      "name": "webclient.timeout",
+      "type": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$TimeoutConfig",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties",
+      "sourceMethod": "getTimeout()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "webclient.base-url",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.circuit-breaker.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.circuit-breaker.failure-rate-threshold",
+      "type": "java.lang.Float",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.circuit-breaker.minimum-number-of-calls",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.circuit-breaker.permitted-number-of-calls-in-half-open-state",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.circuit-breaker.sliding-window-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.circuit-breaker.wait-duration-in-open-state",
+      "type": "java.lang.Long",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$CircuitBreakerConfig"
+    },
+    {
+      "name": "webclient.connect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.default-headers",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.fallback.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$FallbackConfig"
+    },
+    {
+      "name": "webclient.fallback.response-body",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$FallbackConfig"
+    },
+    {
+      "name": "webclient.fallback.status-code",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$FallbackConfig"
+    },
+    {
+      "name": "webclient.logging.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$LoggingConfig"
+    },
+    {
+      "name": "webclient.logging.level",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$LoggingConfig"
+    },
+    {
+      "name": "webclient.proxy.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$ProxyConfig"
+    },
+    {
+      "name": "webclient.proxy.host",
+      "type": "java.lang.String",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$ProxyConfig"
+    },
+    {
+      "name": "webclient.proxy.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$ProxyConfig"
+    },
+    {
+      "name": "webclient.read-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.retry.backoff.delay",
+      "type": "java.lang.Long",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig$BackoffConfig"
+    },
+    {
+      "name": "webclient.retry.backoff.max-delay",
+      "type": "java.lang.Long",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig$BackoffConfig"
+    },
+    {
+      "name": "webclient.retry.backoff.multiplier",
+      "type": "java.lang.Double",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig$BackoffConfig"
+    },
+    {
+      "name": "webclient.retry.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig"
+    },
+    {
+      "name": "webclient.retry.max-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$RetryConfig"
+    },
+    {
+      "name": "webclient.services",
+      "type": "java.util.Map<java.lang.String,com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$ServiceConfig>",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties"
+    },
+    {
+      "name": "webclient.timeout.delete",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$TimeoutConfig"
+    },
+    {
+      "name": "webclient.timeout.get",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$TimeoutConfig"
+    },
+    {
+      "name": "webclient.timeout.post",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$TimeoutConfig"
+    },
+    {
+      "name": "webclient.timeout.put",
+      "type": "java.lang.Integer",
+      "sourceType": "com.macys.stores.factory.parentapp.webclient.config.WebClientProperties$TimeoutConfig"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,4 @@
+# Auto-Configuration
+# This file registers the auto-configuration classes from this library.
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  caching.launchdarkly.webclient.com.macys.stores.factory.FeatureFlagCacheAutoConfiguration

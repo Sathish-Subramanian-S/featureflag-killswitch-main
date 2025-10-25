@@ -1,0 +1,50 @@
+# ===================================================================
+# LAUNCHDARKLY CONFIGURATION
+# ===================================================================
+launchdarkly:
+  # IMPORTANT: Replace this with the actual SDK key from your LaunchDarkly environment.
+  sdk-key: "sdk-da0e4837-7458-4ec5-b2dc-18b14e71db01"
+  offline-mode: false
+
+ldkillswitch:
+  cache:
+    expiration:
+      time: 10
+#  validation-flag-key: "enable-request-context-validation"
+#  supported-channels:
+#    - "MCOM"
+#    - "BCOM"
+#  supported-source-systems:
+#    - "parent-app"
+#    - "Site"
+#  supported-stores:
+#    - "Site"
+#    - "99"
+#laundarkly portal is down
+# ===================================================================
+# WEBCLIENT CONFIGURATION
+# ===================================================================
+webclient:
+  # --- Default settings now correctly nested ---
+  retry:
+    max-attempts: 1
+    backoff:
+      delay: 500 # Corresponds to the old backoffDelay
+
+  # --- Service-specific configurations ---
+  services:
+    # Configuration for the Location Service
+    locationService:
+      base-url: "https://location-service.cloudrts.net"
+      path: "/v1/locations/{id}"
+
+      locationService:
+        base-url: "https://location-service.cloudrts.net"
+        path: "/v1/locations/{id}"
+
+    # Configuration for the Order Service (used in OrderService.java)
+    orderService:
+      base-url: "http://localhost:8081" # Example URL for the order microservice
+      path: "/api/v2/orders"
+      retry:
+        max-attempts: 2 # Example of overriding a default for a specific service

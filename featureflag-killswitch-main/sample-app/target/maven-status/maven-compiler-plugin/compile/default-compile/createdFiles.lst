@@ -1,0 +1,7 @@
+com\example\parentapp\service\LocationService.class
+com\example\parentapp\model\Location.class
+com\example\parentapp\controller\LocationController.class
+com\example\parentapp\service\OrderService.class
+com\example\parentapp\model\OrderRequest.class
+com\example\parentapp\model\OrderResponse.class
+com\example\parentapp\ParentAppApplication.class
